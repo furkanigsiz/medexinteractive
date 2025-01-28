@@ -63,13 +63,13 @@ Uygulama başlatıldığında:
 
 ## 📄 Lisans
 
-Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasını inceleyebilirsiniz.
+Bu proje özel bir lisans altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasını inceleyebilirsiniz.
 
 ## 📞 İletişim
 
-Furkan İğsiz - [LinkedIn](https://linkedin.com/in/furkanigsiz) - [GitHub](https://github.com/furkanigsiz)
+Furkan İğsiz - [LinkedIn](https://www.linkedin.com/in/furkan-i%C4%9Fsiz-2b0467254/) - [GitHub](https://github.com/furkanigsiz)
 
 Proje Linki: [https://github.com/furkanigsiz/medexinteractive](https://github.com/furkanigsiz/medexinteractive)
 
 ---
-⭐️ MEDEX Interactive Brain Visualization projesi [MEDEX](https://medex.com.tr) için geliştirilmiştir.
+⭐️ MEDEX Interactive Brain Visualization projesi [MEDEX](https://medex-smo.com/tr) için geliştirilmiştir.
