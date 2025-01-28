@@ -11,6 +11,7 @@ const Brain3DViewer = () => {
   const sceneRef = useRef(null);
   const neuronsRef = useRef({});
   const originalMaterialsRef = useRef({});
+  const timeoutRef = useRef(null);
   const [loading, setLoading] = useState(true);
   const [loadingProgress, setLoadingProgress] = useState(0);
   const [hoveredNeuron, setHoveredNeuron] = useState(null);
@@ -20,6 +21,14 @@ const Brain3DViewer = () => {
 
   useEffect(() => {
     if (!canvasRef.current) return;
+
+    // Timeout'u başlat
+    timeoutRef.current = setTimeout(() => {
+      if (loading) {
+        setLoading(false);
+        alert('Model yükleme zaman aşımına uğradı. Lütfen sayfayı yenileyin.');
+      }
+    }, 30000);
 
     const engine = new BABYLON.Engine(canvasRef.current, true);
     const scene = new BABYLON.Scene(engine);
@@ -86,6 +95,11 @@ const Brain3DViewer = () => {
       'brain.glb',
       scene,
       (meshes) => {
+        // Timeout'u temizle çünkü model başarıyla yüklendi
+        if (timeoutRef.current) {
+          clearTimeout(timeoutRef.current);
+        }
+
         const rootMesh = meshes[0];
         rootMesh.rotation = new BABYLON.Vector3(0, Math.PI, 0);
 
@@ -111,20 +125,16 @@ const Brain3DViewer = () => {
         }
       },
       (error) => {
+        // Hata durumunda da timeout'u temizle
+        if (timeoutRef.current) {
+          clearTimeout(timeoutRef.current);
+        }
         console.error('Model yükleme hatası:', error);
         setLoading(false);
         // Hata durumunda kullanıcıya bilgi ver
         alert('Model yüklenirken bir hata oluştu. Lütfen sayfayı yenileyin.');
       }
     );
-
-    // Timeout ekleyelim
-    setTimeout(() => {
-      if (loading) {
-        setLoading(false);
-        alert('Model yükleme zaman aşımına uğradı. Lütfen sayfayı yenileyin.');
-      }
-    }, 30000); // 30 saniye sonra timeout
 
     const createNeuronPoints = (scene) => {
       const neuronPositions = [
@@ -279,6 +289,10 @@ const Brain3DViewer = () => {
     });
 
     return () => {
+      // Component unmount olduğunda timeout'u temizle
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
       engine.dispose();
     };
   }, []);
