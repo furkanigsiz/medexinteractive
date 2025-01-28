@@ -1,0 +1,62 @@
+{
+  "connection": {
+    "target_url": "/connections",
+    "tooltip_text": "Nöron Bağlantıları - Aksonlar ve Dendritler"
+  },
+  "cell_body": {
+    "target_url": "/cell-body",
+    "tooltip_text": "Nöron Hücre Gövdesi"
+  },
+  "synapse": {
+    "target_url": "/synapse",
+    "tooltip_text": "Sinaptik Bağlantılar"
+  },
+  "major_structure": {
+    "target_url": "/structure",
+    "tooltip_text": "Nöral Yapılar"
+  },
+  "minor_structure": {
+    "target_url": "/details",
+    "tooltip_text": "Detaylı Nöron Bilgisi"
+  },
+  "neuron_1": {
+    "target_url": "/departments/it",
+    "tooltip_text": "Bilişim Teknolojileri Projeleri"
+  },
+  "neuron_2": {
+    "target_url": "/departments/research",
+    "tooltip_text": "Klinik Araştırma Projeleri"
+  },
+  "neuron_3": {
+    "target_url": "/departments/data",
+    "tooltip_text": "Veri Analizi ve İstatistik"
+  },
+  "neuron_4": {
+    "target_url": "/departments/biotech",
+    "tooltip_text": "Biyoteknoloji Araştırmaları"
+  },
+  "neuron_5": {
+    "target_url": "/departments/medical",
+    "tooltip_text": "Tıbbi Cihaz Geliştirme"
+  },
+  "neuron_6": {
+    "target_url": "/departments/ai",
+    "tooltip_text": "Yapay Zeka ve Machine Learning"
+  },
+  "neuron_7": {
+    "target_url": "/departments/pharma",
+    "tooltip_text": "İlaç Geliştirme Projeleri"
+  },
+  "neuron_8": {
+    "target_url": "/departments/genomics",
+    "tooltip_text": "Genomik Araştırmalar"
+  },
+  "neuron_9": {
+    "target_url": "/departments/innovation",
+    "tooltip_text": "İnovasyon ve AR-GE"
+  },
+  "neuron_10": {
+    "target_url": "/departments/digital",
+    "tooltip_text": "Dijital Sağlık Çözümleri"
+  }
+} 

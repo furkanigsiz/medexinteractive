@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Ethnocentric';
+  src: url('/fonts/Ethnocentric.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-primary: #1A73E8;
+  --color-primary-dark: #1557B0;
+  --color-primary-light: #4285F4;
+  --color-white: #FFFFFF;
+  --color-gray-light: #F0F4F8;
+  --color-gray: #70757A;
+  --color-accent: #00BCD4;
+  --color-accent-dark: #008A9B;
+  --color-background: rgb(2, 2, 16);
+  
+  --font-primary: 'Roboto', sans-serif;
+  --font-heading: 'Merriweather', serif;
+  --font-ethnocentric: 'Ethnocentric', sans-serif;
+}
+ 
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-background);
+  color: var(--color-white);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-white);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  color: #333;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.header p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Memory Page Styles */
+.memory-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 40px;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #f0f0f0;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: background 0.3s;
+}
+
+.back-button:hover {
+  background: #e0e0e0;
+}
+
+.page-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.info-section {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.info-section h3 {
+  margin: 20px 0 10px;
+  color: #34495e;
+}
+
+.info-section ul {
+  list-style-position: inside;
+  margin-left: 20px;
+}
+
+.visual-section img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .header {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 20px;
+  }
+} 
