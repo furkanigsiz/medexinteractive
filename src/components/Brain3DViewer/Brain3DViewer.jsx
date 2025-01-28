@@ -102,16 +102,29 @@ const Brain3DViewer = () => {
         // Nöron noktalarını oluştur
         createNeuronPoints(scene);
         setLoading(false);
+        setLoadingProgress(100);
       },
       (evt) => {
-        const progress = (evt.loaded * 100 / evt.total).toFixed();
-        setLoadingProgress(progress);
+        if (evt.lengthComputable) {
+          const progress = (evt.loaded * 100 / evt.total).toFixed();
+          setLoadingProgress(progress);
+        }
       },
       (error) => {
         console.error('Model yükleme hatası:', error);
         setLoading(false);
+        // Hata durumunda kullanıcıya bilgi ver
+        alert('Model yüklenirken bir hata oluştu. Lütfen sayfayı yenileyin.');
       }
     );
+
+    // Timeout ekleyelim
+    setTimeout(() => {
+      if (loading) {
+        setLoading(false);
+        alert('Model yükleme zaman aşımına uğradı. Lütfen sayfayı yenileyin.');
+      }
+    }, 30000); // 30 saniye sonra timeout
 
     const createNeuronPoints = (scene) => {
       const neuronPositions = [
