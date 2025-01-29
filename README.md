@@ -25,7 +25,7 @@ MEDEX AI Asistanı, ziyaretçilere aşağıdaki konularda destek sağlar:
 - **Özelleştirilmiş Yanıtlar**: Şirket ve teknolojiler hakkında spesifik sorulara yanıtlar
 
 Asistana ulaşmak için:
-1. Sağ alt köşedeki AI asistan ikonuna tıklayın
+1. Sol alt köşedeki AI asistan ikonuna tıklayın
 2. Sorunuzu yazın ve gönderin
 3. Yapay zeka asistanımız size anında yanıt verecektir
 
