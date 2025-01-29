@@ -1,0 +1,41 @@
+{
+    "company_name": "MEDEX SMO",
+    "about_us": "MEDEX SMO, klinik araştırma sitelerini yönetmeye odaklanan bir kuruluştur. Sözleşme Araştırma Organizasyonları (CRO'lar) için hizmetler sunar. Kuruluş, Klinik Denemeler ve ERP sistemleri gibi alanlarda uzmanlaşmıştır.",
+    "founding_year": 2013,
+    "headquarters": {
+      "city": "İstanbul",
+      "district": "Bakırköy"
+    },
+    "industry": "Sağlık Hizmetleri",
+    "type": "Özel Şirket",
+    "size": "51-200 kişi",
+    "website": "http://www.medex-smo.com",
+    "services": [
+      {
+        "name": "Klinik Araştırmalar",
+        "description": "Klinik araştırma süreçlerini optimize etmek için hizmetler sunar."
+      },
+      {
+        "name": "ERP Sistemleri",
+        "description": "Klinik araştırmalarda operasyonları ve süreçleri yönetmek için kullanılan yazılım sistemleri."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Soru sormadan önce ne yapmalıyım?",
+        "answer": "Sorunuzu sormadan önce benzer bir soru aradığınızdan emin olun. Soruları başlıklarına veya etiketlerine göre arayabilirsiniz."
+      },
+      {
+        "question": "Klinik araştırma nedir?",
+        "answer": "Klinik araştırma, sağlık ürünlerinin güvenliğini ve etkinliğini değerlendirmek için yapılan bilimsel çalışmalardır."
+      }
+    ],
+    "contact_info": {
+      "email": "info@medex-smo.com",
+      "phone": "+90 XXX XXX XX XX", 
+      "address": "İstanbul, Bakırköy"
+    },
+    "social_media": {
+      "linkedin": "http://www.linkedin.com/company/medex-smo"
+    }
+  }
