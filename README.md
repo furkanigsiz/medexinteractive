@@ -13,6 +13,21 @@ MEDEX Interactive Brain Visualization, klinik araştırma ve sağlık teknolojil
 - **Proje Showcase**: Her departmana ait projelerin detaylı gösterimi
 - **Responsive Tasarım**: Tüm cihazlarda optimum kullanıcı deneyimi
 - **Modern UI/UX**: Akıcı animasyonlar ve geçişler
+- **🤖 MEDEX AI Asistanı**: Yapay zeka destekli sohbet asistanı
+
+## 🤖 MEDEX AI Asistanı
+
+MEDEX AI Asistanı, ziyaretçilere aşağıdaki konularda destek sağlar:
+
+- **Anlık Destek**: MEDEX'in departmanları ve projeleri hakkında detaylı bilgi
+- **Teknik Rehberlik**: 3D beyin modelinin kullanımı hakkında yardım
+- **Proje Bilgileri**: Devam eden ve tamamlanan projeler hakkında güncel bilgiler
+- **Özelleştirilmiş Yanıtlar**: Şirket ve teknolojiler hakkında spesifik sorulara yanıtlar
+
+Asistana ulaşmak için:
+1. Sağ alt köşedeki AI asistan ikonuna tıklayın
+2. Sorunuzu yazın ve gönderin
+3. Yapay zeka asistanımız size anında yanıt verecektir
 
 ## 🛠 Teknolojiler
 
@@ -21,6 +36,9 @@ MEDEX Interactive Brain Visualization, klinik araştırma ve sağlık teknolojil
 - Vite
 - Modern CSS
 - React Router
+- Qwen AI API
+- Socket.io
+- Axios
 
 ## 🔧 Kurulum
 
@@ -34,6 +52,9 @@ cd medexinteractive
 # Bağımlılıkları yükleyin
 npm install
 
+# .env dosyasını oluşturun ve API anahtarınızı ekleyin
+VITE_QWEN_API_KEY=your_api_key_here
+
 # Geliştirme sunucusunu başlatın
 npm run dev
 ```
@@ -44,6 +65,7 @@ Uygulama başlatıldığında:
 1. 3D beyin modeli üzerindeki nöron noktalarına hover yaparak departman bilgilerini görüntüleyebilirsiniz
 2. Nöronlara tıklayarak ilgili departmanın projelerini inceleyebilirsiniz
 3. Sağ üst köşedeki menü butonu ile tüm departmanlara hızlıca erişebilirsiniz
+4. Sağ alt köşedeki AI asistan ile etkileşime geçebilirsiniz
 
 ## 🌐 Demo
 
